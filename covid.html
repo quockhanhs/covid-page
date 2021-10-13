@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="covid.css">
+
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css"/>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <style type="text/css">
+
+     .button_scroll2top{
+      display:none;
+      width:80px;
+      height:70px;
+      padding-top:20px;
+      padding-left:10px;
+      position:fixed;
+      z-index:999;
+      right:20px;
+      bottom: 20px;
+      background:#fb3;
+      border-radius:999px;
+      cursor:pointer;
+      opacity:0.6;
+      color:#fff;
+      font-size:2.0em;
+     }
+     .button_scroll2top:hover{
+      opacity:1.0;
+     } 
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div href="javascript:;" class="button_scroll2top" onclick="page_scroll2top()"><i class="fa fa-chevron-up"></i></div>
+        <script type="text/javascript">
+            $(window).scroll(function(){
+             if($(window).scrollTop() >= 10) {
+              $('.button_scroll2top').show();
+             } else {
+              $('.button_scroll2top').hide();
+             }
+            });
+            function page_scroll2top(){
+             $('html,body').animate({
+              scrollTop: 0
+                }, 'fast');
+            }
+           </script>
+
+        <div class="header">
+            <div class = "nav-menu-left">
+                <a href=""><img src="./images/covidlogo-removebg-preview.png" alt=""></a>
+            </div>
+            <div class = "nav-menu-right">
+                <a href="#home">Home</a>
+                <a href="#protect">Protect</a>
+                <a href="#symtoms">Symtoms</a>
+                <a href="#prevent">Prevent</a>
+                <a href="#handwash">Handwash</a>
+                <a href="#spread">Spread</a>
+            </div>
+        </div>
+
+        <div class="home">
+            <div class = "content">
+                <h4>Covid-19</h4>
+                <h2>Stay Safe, Stay Home</h2>
+                <p>Lorem Ipsum Dolor Sit Amen Consectetur Adipiscing Elit.
+                    Volunptas Dolores Quibusdam Ad
+                    Sapiente Quod Harum Recusandae Esse Voluptates Repallat Tempore
+                </p>
+                <a href="">Protect Now</a>
+            </div>
+            <div class = "image">
+                <img src="./images/home-img.png" alt="">
+            </div>
+        </div>
+
+        <div class="protect">
+            <div class = "text">
+                <h3>Take Steps To Protect Yourself</h3>
+            </div>
+            <div class="step">
+                <div class = "step_1">
+                    <div class = "step-image">
+                        <img src="./images/protect-1.png" alt="">
+                    </div>
+                    <div class = "step-info">
+                        <span class = "step-label">Wear A Face Mask</span>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipiscing Elit, Et Ab Magni Consequatur,
+                            Quae In Repellat, Placeat Deserunt Vitae Alias Dignissimos!
+                        </p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <div class = "step_2">
+                    <div class = "step-image">
+                        <img src="./images/protect-2.png" alt="">
+                    </div>
+                    <div class = "step-info">
+                        <span class = "step-label">Wash Your Hand</span>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipiscing Elit, Et Ab Magni Consequatur,
+                            Quae In Repellat, Placeat Deserunt Vitae Alias Dignissimos!
+                        </p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <div class = "step_3">
+                    <div class = "step-image">
+                        <img src="./images/protect-3.png" alt="">
+                    </div>
+                    <div class = "step-info">
+                        <span class = "step-label">Avoid Close Contact</span>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipiscing Elit, Et Ab Magni Consequatur,
+                            Quae In Repellat, Placeat Deserunt Vitae Alias Dignissimos!
+                        </p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>            
+            </div>
+        </div>
+
+        <div class="symptoms">
+            <div class = "content">
+                <h3>What Are The Main Symptoms</h3>
+                <p>Lorem Ipsum Dolor Sit Amen Consectetur Adipiscing Elit.
+                    Volunptas Dolores Quibusdam Ad
+                    Sapiente Quod Harum Recusandae Esse Voluptates Repallat Tempore
+                </p>
+                <a href="">Know More</a>
+            </div>
+            <div class = "image">
+                <img src="./images/symptoms-img.png" alt="">
+            </div>
+        </div>
+
+        <div class="prevent">
+            <div class = "row_1">
+                <div class = "image">
+                    <img src="./images/dont-img.png" alt="">
+                </div>
+                <div class = "content">
+                    <h3>Thing Not To Do During Covid</h3>
+                    <p>Lorem Ipsum Dolor Sit Amen Consectetur Adipiscing Elit.
+                        Volunptas Dolores Quibusdam Ad
+                        Sapiente Quod Harum Recusandae Esse Voluptates Repallat Tempore
+                    </p>
+                </div>
+            </div>
+            <div class = "row_2">
+                <div class = "content">
+                    <h3>Thing To Do During Covid</h3>
+                    <p>Lorem Ipsum Dolor Sit Amen Consectetur Adipiscing Elit.
+                        Volunptas Dolores Quibusdam Ad
+                        Sapiente Quod Harum Recusandae Esse Voluptates Repallat Tempore
+                    </p>
+                </div>
+                <div class = "image">
+                    <img src="./images/do-img.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="wash">
+            <div class = "text">
+                <h3>How To Wash Your Hand Properly</h3>
+            </div>
+            <div class = "step">
+                <div class = row_1>
+                    <div class = "step_1">
+                        <div class = "image">
+                            <img src="./images/hadnwash-1.png" alt="">
+                        </div>
+                        <div class = "step-info">
+                            <h4>Apply Soap On Hand</h4>
+                        </div>
+                    </div>
+                    <div class = "step_2">
+                        <div class = "image">
+                            <img src="./images/hadnwash-2.png" alt="">
+                        </div>
+                        <div class = "step-info">
+                            <h4>Apply Soap On Hand</h4>
+                        </div>
+                    </div>
+                    <div class = "step_3">
+                        <div class = "image">
+                            <img src="./images/hadnwash-3.png" alt="">
+                        </div>
+                        <div class = "step-info">
+                            <h4>Apply Soap On Hand</h4>
+                        </div>
+                    </div>
+                    <div class = "step_4">
+                        <div class = "image">
+                            <img src="./images/hadnwash-4.png" alt="">
+                        </div>
+                        <div class = "step-info">
+                            <h4>Apply Soap On Hand</h4>
+                        </div>
+                    </div>
+                    <div class = "step_5">
+                        <div class = "image">
+                            <img src="./images/hadnwash-5.png" alt="">
+                        </div>
+                        <div class = "step-info">
+                            <h4>Apply Soap On Hand</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class = "row_2">
+                    <div class = "step_6">
+                        <div class = "image">
+                            <img src="./images/hadnwash-6.png" alt="">
+                        </div>
+                        <div class = "step-info">
+                            <h4>Apply Soap On Hand</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spread">
+            <div class="text">
+                <h3>How Covid-19 Spreads Over The World</h3>
+            </div>
+            <div class="image">
+                <img src="./images/map.png" alt="">
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class = "row_1">
+                <div class = "item_1">
+                    <h3>About Us</h3>
+                    <p>Lorem Ipsum Dolor Sit Amen Consectetur Adipiscing Elit.
+                        Volunptas Dolores Quibusdam Ad
+                        Sapiente Quod Harum Recusandae Esse Voluptates Repallat Tempore
+                    </p>
+                </div>
+                <div class = "item_2">
+                    <h3>Location</h3>
+                    <a href="">India</a>
+                    <a href="">USA</a>
+                    <a href="">Russia</a>
+                    <a href="">Japan</a>
+                    <a href="">France</a>
+                    <a href="">Africa</a>
+                    <a href="">Spain</a>
+                </div>
+                <div class = "item_3">
+                    <h3>Quick Links</h3>
+                    <a href="">Home</a>
+                    <a href="">Protect</a>
+                    <a href="">Symtoms</a>
+                    <a href="">Prevent</a>
+                    <a href="">Handwash</a>
+                    <a href="">Spread</a>
+                </div>
+                <div class = "item_4">
+                    <h3>Contact Info</h3>
+                </div>
+            </div>
+            <div class = row_2>
+                <h3>Created By SIMS TECH. Web Designer All Rights Reserved!</h3>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
