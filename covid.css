@@ -15,22 +15,35 @@ body{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 0px 10px 0px gray;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+.header ul{
+        list-style-type: none;
+}
+.header #main-menu{
+    display: flex;
 }
 .nav-menu-left{    
-    margin-left: 50px ;
+    margin-left: 100px ;
 }
 .nav-menu-right{
-    margin-right: 50px;
-    text-align: right;
-    flex-direction: row;
+    margin-right: 100px;
 }
-.nav-menu-right a{
-    margin-left: 5px;
-    margin-right: 5px;
-    color: unset;
+.nav-menu-right .nav-menu-link{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: grey;
     text-decoration: none;
 }
-.nav-menu-right a:hover{
+.nav-menu-right .nav-menu-link:hover{
+    color: red;
+    text-decoration: underline;
+}
+.nav-menu-right .nav-menu-link-active{
+    margin-left: 10px;
+    margin-right: 10px;
     color: red;
     text-decoration: underline;
 }
@@ -39,20 +52,27 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 50px;
+    padding-top: 100px;
+    height: 730px;
 }
 .home .content{
     width: 50%;
-    margin: 0px 20px 0px 70px
+    margin-left: 100px;
 }
 .home .content h4{
     color: red;
+    font-weight: normal;
+    font-size: 20px;
 }
 .home .content h2{
     font-weight: bolder;
+    font-size: 35px;
+    margin-top: -30px;
+    margin-bottom: -10px;
 }
 .home .content p{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    color: grey;
 }
 .home .content a{
     padding: 0.5rem 2rem;
@@ -67,9 +87,12 @@ body{
 }
 .home .image{
     width: 50%;
+    margin-right: 100px;
+    height: 100%;
 }
 .home .image img{
-    height: 500px;
+    display: block;
+    width: 100%;
 }
 
 .protect{
@@ -77,24 +100,42 @@ body{
     flex-direction: column;
     /*margin: 0px 20px 0px 50px*/
     /*margin-bottom: 500px;*/
-    margin-top: 50px;
-    margin-bottom: 300px;
+    /*margin-top: 50px;
+    margin-bottom: 300px;*/
+    height: 730px;
+    padding-top: 120px;
 }
 .protect .text{
     text-align: center;
-    margin: 20px 20px;
+    /*margin: 20px 20px;*/
+}
+.protect .text h3{
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+.protect .text span{
+    color: red;
 }
 .protect .step{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 0px 300px 0px 300px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .protect .step img{
     width: 100%;
 }
 .protect .step span{
     font-weight: bolder;
+    font-size: 20px;
+}
+.protect .step p{
+    font-size: 10px;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .protect .step a{
     padding: 0.5rem 2rem;
@@ -104,46 +145,68 @@ body{
     border-radius: 20px 20px 20px 20px;
 }
 .protect > .step > .step_1{
-    width: 20%;
+    width: 25%;
     text-align: center;
     padding: 20px;
     box-shadow: 0px 0px 2px 0px grey;
+    height: 100%;
 }
 .protect > .step > .step_1:hover{
-    box-shadow: 0 0px 5px 1px grey;
-    transform: translateX(5px);
+    box-shadow: 2px 5px 2px 2px rgb(228, 220, 220);
+    transform: translateY(-5px);
+    transition: 0.5s;
 }
 .protect > .step > .step_2{
-    width: 20%;
+    width: 25%;
     text-align: center;
     padding: 20px;
     box-shadow: 0px 0px 2px 0px grey;
+    height: 100%;
 }
 .protect > .step > .step_2:hover{
-    box-shadow: 0 0px 5px 1px grey;
-    transform: translateX(5px);
+    box-shadow: 2px 5px 2px 2px rgb(228, 220, 220);
+    transform: translateY(-5px);
+    transition: 0.5s;
 }
 .protect > .step > .step_3{
-    width: 20%;
+    width: 25%;
     text-align: center;
     padding: 20px;
     box-shadow: 0px 0px 2px 0px grey;
+    height: 100%;
 }
 .protect > .step > .step_3:hover{
-    box-shadow: 0 0px 5px 1px grey;
-    transform: translateX(5px);
+    box-shadow: 2px 5px 2px 2px rgb(228, 220, 220);
+    transform: translateY(-5px);
+    transition: 0.5s;
 }
 
 .symptoms{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 50px;
-    margin-left: 70px;
-    margin-bottom: 100px;
+    height: 730px;
 }
 .symptoms .content{
     width: 50%;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.symptoms .content h3{
+    font-size: 25px;
+    margin: 0px 0px 0px 0px;
+}
+.symptoms .content p{
+    color: grey;
+    font-size: 12px;
+}
+.symptoms .content span{
+    color: red;
+}
+.symptoms .content .ul{
+    display: flex;
+    margin-top: -20px;
+    margin-bottom: 10px;
 }
 .symptoms .content a{
     padding: 0.5rem 2rem;
@@ -158,75 +221,105 @@ body{
 }
 .symptoms .image{
     width: 50%;
+    margin-right: 100px;
 }
 .symptoms .image img{
-    height: auto;
-    width: 500px;
-    margin-left: 50px;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .prevent{
     display: flex;
     flex-direction: column;
     background-color: black;
+    height: 730px;
 }
 .prevent .row_1{
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 50%;
 }
 .prevent .row_1 .content{
     width: 50%;
-    margin-left: 50px;
-    margin-right: 70px;
+    margin-right: 100px;
 }
 .prevent .row_1 .content h3{
     color: white;
+    font-size: 25px;
+}
+.prevent .row_1 .content span{
+    color: red;
+}
+.prevent .row_1 .content li{
+    color: gray;
 }
 .prevent .row_1 .content p{
     color:gray;
 }
 .prevent .row_1 .image{
     width: 50%;
-    margin-left: 70px;
+    margin-left: 100px;
+    height: 100%;
 }
 .prevent .row_1 .image img{
-    width: 500px;
-    height: 500px;
+    display: block;
+    /*width: 100%;*/
+    height: 100%;
 }
 .prevent .row_2{
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 50%;
 }
 .prevent .row_2 .content{
     width: 50%;
-    margin-left: 70px;
-    margin-right: 50px;
+    margin-left: 100px;
 }
 .prevent .row_2 .content h3{
     color: white;
+    font-size: 25px;
+}
+.prevent .row_2 .content span{
+    color: red;
+}
+.prevent .row_2 .content li{
+    color: gray;
 }
 .prevent .row_2 .content p{
     color:gray;
 }
 .prevent .row_2 .image{
     width: 50%;
-    margin-left: 50px;
+    margin-left: 100px;
+    height: 100%;
 }
 .prevent .row_2 .image img{
-    width: 500px;
-    height: 500px;
+    display: block;
+    height: 100%;
 }
 
 
 .wash{
     display: flex;
     flex-direction: column;
-    margin: 10% 10%;
+    padding: 10%;
 }
 .wash .text{
     text-align: center;
+    margin-bottom: 20px;
+}
+.wash .text h3{
+    font-size: 25px;
+}
+.wash .text span{
+    color: red;
+}
+.wash h4{
+    margin: 0px 0px 0px 0px;
+    font-size: 70%;
 }
 .wash .row_1{
     display: flex;
@@ -234,47 +327,112 @@ body{
     justify-content: space-evenly;
 }
 .wash .row_1 .step_1{
-    width: 15%;
+    width: 10%;
     text-align: center;
     box-shadow: 0px 0px 2px 0px grey;
     padding: 20px;
+    position: relative;
+    height: 100%;
 }
+.wash .row_1 .step_1 .circle{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+.wash .row_1 .step_1 .circle span{
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.7rem 0.7rem;
+    color: white;
+  }
 .wash .row_1 .step_1 .image img{
     width: 100%;
 }
 .wash .row_1 .step_2{
-    width: 15%;
+    width: 10%;
     text-align: center;
     box-shadow: 0px 0px 2px 0px grey;
     padding: 20px;
+    position: relative;
+    height: 100%;
 }
+.wash .row_1 .step_2 .circle{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+.wash .row_1 .step_2 .circle span{
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.7rem 0.7rem;
+    color: white;
+  }
 .wash .row_1 .step_2 .image img{
     width: 100%;
 }
 .wash .row_1 .step_3{
-    width: 15%;
+    width: 10%;
     text-align: center;
     box-shadow: 0px 0px 2px 0px grey;
     padding: 20px;
+    position: relative;
+    height: 100%;
 }
+.wash .row_1 .step_3 .circle{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+.wash .row_1 .step_3 .circle span{
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.7rem 0.7rem;
+    color: white;
+  }
 .wash .row_1 .step_3 .image img{
     width: 100%;
 }
 .wash .row_1 .step_4{
-    width: 15%;
+    width: 10%;
     text-align: center;
     box-shadow: 0px 0px 2px 0px grey;
     padding: 20px;
+    position: relative;
+    height: 100%;
 }
+.wash .row_1 .step_4 .circle{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+.wash .row_1 .step_4 .circle span{
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.7rem 0.7rem;
+    color: white;
+  }
 .wash .row_1 .step_4 .image img{
     width: 100%;
 }
 .wash .row_1 .step_5{
-    width: 15%;
+    width: 10%;
     text-align: center;
     box-shadow: 0px 0px 2px 0px grey;
     padding: 20px;
+    position: relative;
+    height: 100%;
 }
+.wash .row_1 .step_5 .circle{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+.wash .row_1 .step_5 .circle span{
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.7rem 0.7rem;
+    color: white;
+  }
 .wash .row_1 .step_5 .image img{
     width: 100%;
 }
@@ -282,14 +440,27 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 30px
+    margin-top: 30px;
 }
 .wash .row_2 .step_6{
-    width: 15%;
+    width: 10%;
     text-align: center;
     box-shadow: 0px 0px 2px 0px grey;
     padding: 20px;
+    position: relative;
+    height: 100%;
 }
+.wash .row_2 .step_6 .circle{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+.wash .row_2 .step_6 .circle span{
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.7rem 0.7rem;
+    color: white;
+  }
 .wash .row_2 .step_6 .image img{
     width: 100%;
 }
@@ -297,14 +468,17 @@ body{
 .spread{
     display: flex;
     flex-direction: column;
-    margin-bottom: 70px;
+    padding: 100px 100px 100px 100px;
 }
 .spread .text{
     text-align: center;
 }
+.spread .text span{
+    color: red;
+}
 .spread .image{
-    margin-left: 70px;
-    margin-right: 70px;
+    /*margin-left: 70px;
+    margin-right: 70px;*/
 }
 .spread .image img{
     width: 100%;
@@ -319,13 +493,16 @@ body{
     color: white;
 }
 .footer p{
-    color: white
+    color: white;
+    font-size: 12px;
 }
+
 .footer a{
     margin-top: 5px;
     margin-bottom: 5px;
     color: white;
     text-decoration: none;
+    font-size: 13px;
 }
 .footer a:hover{
     color: red;
@@ -335,11 +512,13 @@ body{
 .footer .row_1{
     display: flex;
     flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .footer .row_1 .item_1{
     width: 25%;
     text-align: left;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
 }
 .footer .row_1 .item_2{
     display: flex;
@@ -360,19 +539,35 @@ body{
     text-align: left;
     margin-left: 50px;
 }
+.footer .row_1 .item_4 span{
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: none;
+    padding-left: 0.5rem;
+}
+.footer .row_1 .item_4 i{
+    color: red;
+}
+.footer ul{
+    margin-left: -40px;
+}
 .footer .row_2{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
     border-top: 1px solid white;
     text-align: center;
 }
-
-@media (max-width: 1190px){
+.footer .row_2 span{
+    color: red;
+}
+/*@media (max-width: 1190px){
     .protect .step {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        /* margin: 0px 300px 0px 300px; */
+        /* margin: 0px 300px 0px 300px; 
         margin-left: 40px;
         margin-right: 40px;
     }
@@ -434,8 +629,109 @@ body{
         padding: 20px;
     }
 }
-
+*/
+.header #toggle{
+    display: none;
+    text-align: right;
+}
+@media (max-width: 1100px){
+    .home .image {
+        width: 50%;
+        margin-right: 100px;
+        height: 100%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .home .image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .protect .step {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .wash {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+@media (max-width:768px){
+    .nav-menu-right{
+        display: none;
+    }
+    .header #toggle{
+        display: block;
+    }
+    .header #main-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home .content {
+        width: 50%;
+        margin-left: 0px;
+    }
+    .home .image {
+        width: 50%;
+        margin-right: 0px; 
+        height: 100%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .symptoms .content {
+        width: 50%;
+        margin-left: 0px; 
+        margin-right: 50px
+    }
+    .symptoms .image {
+        width: 50%;
+        margin-right: 0px;
+    }
+    .prevent .row_1 .image {
+        width: 50%;
+        margin-left: 0px;
+        height: 100%;
+    }
+    .prevent .row_1 .content {
+        width: 50%;
+        margin-right: 100px;
+    }
+    .prevent .row_2 .content {
+        width: 50%;
+        margin-left: 0px; 
+    }
+    .prevent .row_2 .image img {
+        display: block;
+        /* height: 100%; */
+        width: 100%;
+    }
+    .footer .row_1 {
+        display: flex;
+        flex-direction: row;
+         margin-left: 10px; 
+        margin-right: 0px;
+    }
+}
 @media (max-width: 555px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 0px 10px 0px grey;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        margin-top: -50px;
+    }
     .nav-menu-left {
         margin-left: 0px;
     }
@@ -446,11 +742,17 @@ body{
         margin-top: 50px;
     }
     .home .content {
-        width: 50%;
+        width: 100%;
         margin: 0px 0px 0px 0px; 
     }
     .home .image {
-        width: 95%;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .protect {
+        /* margin-bottom: 500px; */
+        height: auto;
+        padding-top: 120px;
     }
     .protect .step {
         display: flex;
@@ -481,9 +783,23 @@ body{
         box-shadow: 0px 0px 2px 0px grey;
         margin: 15px 15px 15px 15px;
     }
+    .prevent {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        height: auto;
+    }
+    .prevent .row_1 .image {
+        width: 100%;
+        /* margin-left: 70px; */
+    }
     .prevent .row_1 .image img {
-        width: 80%;
-        height: 500px;
+        width: 100%;
+        height: 100%;
+    }
+    .prevent .row_2 .image {
+        width: 100%;
+        margin-left: 0px;
     }
     .symptoms {
         display: flex;
@@ -494,7 +810,7 @@ body{
         margin-bottom: 100px;
     }
     .symptoms .content {
-        /* width: 50%; */
+        width: 100%;
         margin: 20px 20px 20px 20px;
     }
     .symptoms .image {
@@ -585,4 +901,35 @@ body{
         display: flex;
         flex-direction: column;
     }
+    .footer .row_1 .item_1 {
+        width: 25%;
+        text-align: left;
+        margin-left: 50px;
+    }
 }
+
+.button_scroll2top{
+    display:none;
+    width:80px;
+    height:70px;
+    padding-top:20px;
+    padding-left:10px;
+    position:fixed;
+    z-index:999;
+    right:20px;
+    bottom: 20px;
+    /*background:#fb3;*/
+    background-image: url(./images/scroll-img-removebg-preview\ \(1\).png);
+    background-repeat: no-repeat;
+    border-radius:999px;
+    cursor:pointer;
+    opacity:0.6;
+    font-size:2.0em;
+   }
+   .button_scroll2top i{
+       display: none;
+   }
+   .button_scroll2top:hover{
+    opacity:1.0;
+   }
+   
